@@ -1,0 +1,36 @@
+class Simple1
+{
+void simple()
+{
+float principle=20200,rate=2,time=3;
+float si=0;
+si=(rate*principle*time)/100;
+System.out.println("principle amount is:"+principle);
+System.out.println("rate:"+rate);
+System.out.println("time:"+time);
+System.out.println("the simple interest is:"+si);
+}
+void compound()
+{
+double amount=0,principle=1000,rate=4,time=2,ci,n=1;
+System.out.println("principle amount"+principle);
+System.out.println("time"+time);
+System.out.println("rate"+rate);
+amount=principle*((1+rate)/n)*((1+rate)/n); 
+System.out.println("amount"+amount);
+ci=amount-principle;
+System.out.println("compound interest="+ci);
+}
+}
+class Simple
+{
+public static void main(String args[])
+{
+Simple1 ob=new Simple1();
+ob.simple();
+ob.compound();
+}
+}
+
+
+
